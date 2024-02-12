@@ -55,6 +55,7 @@
                                         <tr>
 
                                             <th>Name</th>
+                                            <th>Foto</th>
                                             <th>Category</th>
                                             <th>Price</th>
                                             <th>Status</th>
@@ -66,6 +67,7 @@
 
                                                 <td>{{ $product->name }}
                                                 </td>
+                                                <td><img src="{{ asset($product->image) }}" alt="Gambar Produk"width="70" height="70"></td>
                                                 <td>
                                                     {{ $product->category->name }}
                                                 </td>
